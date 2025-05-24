@@ -55,10 +55,17 @@ body {
 }
 
 .logo {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+}
+
+.logo span {
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav ul {
@@ -117,6 +124,7 @@ body {
     margin-bottom: 1rem;
     background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 30px rgba(151, 71, 255, 0.3);
     font-weight: 700;
@@ -189,6 +197,35 @@ body {
         radial-gradient(circle at 75% 75%, rgba(0, 191, 255, 0.2) 0%, transparent 50%);
 }
 
+.hero-illustration {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto 0;
+    position: relative;
+}
+
+.hero-illustration svg {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 8px 24px rgba(151, 71, 255, 0.2));
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero-illustration circle,
+.hero-illustration path {
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-illustration circle:nth-child(odd),
+.hero-illustration path:nth-child(odd) {
+    animation-delay: -3s;
+}
+
 /* Section Styles */
 section {
     padding: 6rem 0;
@@ -235,18 +272,44 @@ section {
     background-color: var(--card-background);
     border-radius: var(--border-radius);
     padding: 2rem;
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
 
 .feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.feature-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(151, 71, 255, 0.1), rgba(255, 105, 180, 0.1));
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.feature-icon svg {
+    position: relative;
+    z-index: 1;
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(0 4px 12px rgba(151, 71, 255, 0.3));
 }
 
 .feature-card h3 {

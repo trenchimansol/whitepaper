@@ -13,8 +13,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="assets/trenchi_logo.png" alt="Trenchi Logo">
-                <span>TRENCHI</span>
+                <span>Trenchi</span>
             </div>
             <nav class="nav">
                 <ul>
@@ -25,7 +24,7 @@
                     <li><a href="#roadmap">Roadmap</a></li>
                 </ul>
             </nav>
-            <button class="cta-button">Gm95.CmJw</button>
+
         </div>
     </header>
 
@@ -37,9 +36,38 @@
                 <p>Real Connections.</p>
                 <div class="hero-buttons">
                     <a href="documentation.html" class="primary-button">Read Full Documentation</a>
-                    <a href="#download" class="secondary-button">Download PDF</a>
                 </div>
-                <img src="assets/hero_illustration.png" alt="Trenchi Matching Illustration" class="hero-illustration">
+                <div class="hero-illustration">
+                <svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#9747FF"/>
+                            <stop offset="100%" style="stop-color:#FF69B4"/>
+                        </linearGradient>
+                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+                        </filter>
+                    </defs>
+                    <!-- Large Network Circle -->
+                    <circle cx="300" cy="200" r="150" stroke="url(#heroGradient)" stroke-width="2" opacity="0.1"/>
+                    <!-- Medium Network Circle -->
+                    <circle cx="300" cy="200" r="100" stroke="url(#heroGradient)" stroke-width="2" opacity="0.2"/>
+                    <!-- Small Network Circle -->
+                    <circle cx="300" cy="200" r="50" stroke="url(#heroGradient)" stroke-width="2" opacity="0.3"/>
+                    <!-- Connection Lines -->
+                    <path d="M200 150L400 250" stroke="url(#heroGradient)" stroke-width="2" opacity="0.2"/>
+                    <path d="M400 150L200 250" stroke="url(#heroGradient)" stroke-width="2" opacity="0.2"/>
+                    <!-- Network Nodes -->
+                    <circle cx="200" cy="150" r="8" fill="url(#heroGradient)" filter="url(#glow)"/>
+                    <circle cx="400" cy="150" r="8" fill="url(#heroGradient)" filter="url(#glow)"/>
+                    <circle cx="200" cy="250" r="8" fill="url(#heroGradient)" filter="url(#glow)"/>
+                    <circle cx="400" cy="250" r="8" fill="url(#heroGradient)" filter="url(#glow)"/>
+                    <circle cx="300" cy="200" r="12" fill="url(#heroGradient)" filter="url(#glow)"/>
+                    <!-- Floating Elements -->
+                    <path d="M250 100L270 120L250 140L230 120L250 100Z" stroke="url(#heroGradient)" stroke-width="2" opacity="0.5"/>
+                    <path d="M350 260L370 280L350 300L330 280L350 260Z" stroke="url(#heroGradient)" stroke-width="2" opacity="0.5"/>
+                </svg>
+            </div>
             </div>
         </div>
         <div class="hero-background"></div>
@@ -68,42 +96,69 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <img src="assets/feature_pnl_matching.png" alt="PnL-Based Matching">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#9747FF"/>
+                                    <stop offset="100%" style="stop-color:#FF69B4"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M8 32L20 44L32 20L44 32L56 16" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M32 56C45.2548 56 56 45.2548 56 32C56 18.7452 45.2548 8 32 8C18.7452 8 8 18.7452 8 32C8 45.2548 18.7452 56 32 56Z" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
                     <h3>PnL-Based Matching</h3>
                     <p>Connect with traders who have complementary profit and loss patterns</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <img src="assets/trenchi_logo.png" alt="Tailored Profiles">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 32C38.6274 32 44 26.6274 44 20C44 13.3726 38.6274 8 32 8C25.3726 8 20 13.3726 20 20C20 26.6274 25.3726 32 32 32Z" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 56C8 48.8203 13.8203 43 21 43H43C50.1797 43 56 48.8203 56 56" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
                     <h3>Tailored Profiles</h3>
                     <p>Showcase your trading credentials, token holdings, and social media presence</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <img src="assets/trenchi_logo.png" alt="Tip Woman Only">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="24" r="16" stroke="url(#iconGradient)" stroke-width="3"/>
+                            <path d="M32 40V56" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M24 48H40" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M28 20C28 22.2091 29.7909 24 32 24C34.2091 24 36 22.2091 36 20" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
                     </div>
                     <h3>Tip Woman Only</h3>
                     <p>Unique feature that encourages respectful interactions and gender balance</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <img src="assets/feature_ai_matching.png" alt="AI-Driven Matchmaking">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 8L8 20L32 32L56 20L32 8Z" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 44L32 56L56 44" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 32L32 44L56 32" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
                     <h3>AI-Driven Matchmaking</h3>
                     <p>Sophisticated algorithm that considers multiple dimensions of compatibility</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <img src="assets/trenchi_logo.png" alt="Trading Zodiac">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="24" stroke="url(#iconGradient)" stroke-width="3"/>
+                            <path d="M32 8L38 20L50 20L44 32L50 44L38 44L32 56L26 44L14 44L20 32L14 20L26 20L32 8Z" stroke="url(#iconGradient)" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
                     </div>
                     <h3>Trading Zodiac</h3>
                     <p>Discover your trading archetype and find compatible matches</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <img src="assets/trenchi_logo.png" alt="Trophy Cabinet">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 8L40 24H56L44 36L48 56L32 44L16 56L20 36L8 24H24L32 8Z" stroke="url(#iconGradient)" stroke-width="3" stroke-linejoin="round"/>
+                            <circle cx="32" cy="32" r="12" stroke="url(#iconGradient)" stroke-width="3"/>
+                        </svg>
                     </div>
                     <h3>Trophy Cabinet</h3>
                     <p>Celebrate trading achievements with collectible digital trophies</p>
@@ -119,12 +174,16 @@
                 <div class="divider"></div>
             </div>
             <div class="points-overview">
-                <div class="points-card">
-                    <div class="points-icon">
-                        <img src="assets/feature_points_system.png" alt="Points System">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="24" stroke="url(#iconGradient)" stroke-width="3"/>
+                            <path d="M32 20V44" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M20 32H44" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
                     </div>
-                    <h3>10 Points</h3>
-                    <p>For creating your profile</p>
+                    <h3>Points System</h3>
+                    <p>Earn points through positive interactions and successful matches</p>
                 </div>
                 <div class="points-content">
                     <h3>What Can Points Do For You?</h3>
